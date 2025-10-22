@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Proyecto MichiMavado</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Escena 1 -->
+  <div class="scene active" id="scene1">
+    <img src="images/Luna.png" alt="gatito" class="cat-img" />
+    <h1>Odi guapo</h1>
+    <p>¿Te cuento un secreto?</p>
+    <div class="button-container">
+  <button onclick="respuestaNo()">No</button>
+  <button onclick="cambiarEscena('scene2')">Sí</button>
+</div>
+
+    <p id="incorrecto" class="hidden">Respuesta incorrecta feo</p>
+  </div>
+
+<!-- Escena 2 -->
+<div class="scene" id="scene2">
+  <div class="scroll-zone">
+    <img src="images/Peach.png" alt="inicio" class="wide-cat" />
+    <div class="middle-text"> Me enojas muchisisisisisisisisisisisisisisisisisisisisisisisisisisisisisimo</div>
+    <img src="images/Goma.png" alt="final" class="wide-cat" />
+  </div>
+</div>
+ 
+<!-- Escena 3 -->
+<div class="scene" id="scene3">
+  <div class="scene-content">
+    <h1>Pero igual sabes que TE AMO❤️</h1>
+    <p>¿Te enseño que tanto?</p>
+    <div class="button-container">
+      <button onclick="escena3b()">No</button>
+      <button onclick="mostrarGatos('catRain')">Sí</button>
+    </div>
+  </div>
+  <div id="catRain"></div>
+</div>
+
+
+<!-- Escena 3b -->
+<div class="scene" id="scene3b">
+  <div class="scene-content">
+    <img src="images/Michi.gif" alt="gatito" class="cat-img" />
+    <p>¿Vas a ver si o si MUAJAJAJA?</p>
+    <div class="button-container">
+      <button onclick="null">No</button>
+      <button onclick="mostrarGatos('catRain2')">Sí</button>
+    </div>
+  </div>
+  <div id="catRain2"></div>
+</div>
+
+
+<!-- Escena 4 -->
+<div class="scene" id="scene4">
+  <img src="images/Lunaguapa.png" alt="gatito" class="cat-img" />
+  <h1>Ya viste si es mucho viejo poposo</h1>
+  <p>Y ño lo puedes negar, ya estas viendo las pendejadas que hago por amarte</p>
+</div>
+
+<!-- Escena 5 -->
+<div class="scene" id="scene5">
+  <h1>Nada mas queria recordarte lo mucho que te amo aunque a veces no lo demuestre mucho MENOS CUANDO ME ENOJAS.</h1>
+</div>
+
+<!-- Escena 6 -->
+<div class="scene" id="scene6">
+  <h1>TE AMO MI GUAPO❤️</h1>
+  <img src="images/Lunafinal.png" alt="gatito" class="cat-img" />
+  <p class="small-text">Y sí, claramente me ayudó ChatGPT jajaja</p>
+</div>
+
+<script src="script.js"></script>
